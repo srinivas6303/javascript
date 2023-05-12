@@ -1,0 +1,146 @@
+<!--
+Operators in javascrit:
+
+operators is a symbol that is used to perform operations 
+according to user requirements.
+We can perform this in variables or values
+
+
+Types of operators in js:
+there are 5 types
+
+1.Arithmetic Oprators
+  +,-,*,/,++,--,etc
+
+2.Assignment Oprators
+    simple
+    = 
+     compound  
+     +=,-+,/=,etc
+
+3.Comparison Operators
+  <,>,<=,==,===,!=,<=,>=,>!,<!,etc
+
+4.Logical Operator
+  &&,||,!
+
+5.Conditional Operators
+  ?:
+
+  unary operator  : ++,--
+  binary operator : Arithmetic Oprators,Assignment Oprators,Comparison Operators,Logical Operator
+  ternary operator: Conditional Operators
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+     //1.Arithmetic Oprators(+,-,*,/,++,--,etc)
+      document.write(9+1);
+      document.write("<br>");
+
+      var a=3;
+      var b=2;
+      var c=a+b;
+      document.write(c+1);//a+b+1
+      document.write("<br>");
+
+      a++;//increment
+      document.write(a);//means a+1 [a--(decrement) means a-1]
+      document.write("<br><br><br>");
+
+
+      //2.Assignment Oprators(=,+=,-+,/=,etc)
+      var x=13;//simple assignment
+      var y=2;
+      document.write(x);
+      document.write("<br>");
+
+      x+=y;//means x=x+y  [x-=y  means x=x-y] compound assignment
+      document.write(x);
+      document.write("<br><br><br>");
+      
+
+      //3.Comparison Operators(<,>,<=,==,!=,<=,>=,etc) 
+      //gives output in the form of boolean(true or false) datatype
+      //== checks equal value &  === check equal value and not checks same  datatype
+      //executing terminal only
+         var p=3;
+         var q=6;
+        console.log(p>q);//false
+
+         var t=34;
+         var s=34;
+         var r="34";//string
+          console.log(t==s);//true    same value
+          console.log(t===s);// true  same value and same datatype 
+
+          console.log(t==r);//true     same value and(==) not checking datatype
+          console.log(t===r);//false    same value and(===)  checking datatype also
+      
+      //4.Logical Operator(&&,||,!)
+      //AND &&  each condition must be true 
+      // OR ||  atleast one condition must be true 
+      // ! NOT it give boolean output
+
+            // AND
+      var x=7;
+      var y=34;
+          if(x==7 && y==34) //gives output as true ,due to two statement is true
+                            // (y==78  gives outsput as false)
+          {
+            document.write("true<br>");
+          } 
+             
+            //OR  
+      var p=7;
+      var q=34;
+          if(p==7 || q==39) //  gives output as true ,due to one statement is true
+          {
+            document.write("true<br><br>");
+          }  
+
+          //NOT    gives ouput on console
+      var g=7;
+      var h=34;
+         console.log(!g==7);//  gives output as false ,due to g=7
+       
+
+
+
+      //5.Conditional Operators(?:) ternary
+      // it is shortcut to execute if else 
+      //syntax
+      // variablename condition? value1:value2
+      var age=9;
+      var entry;
+
+     /*
+      if(age >=1)
+      {
+        entry='ALLOW';//output
+      }
+      else
+      {
+       entry='NOT ALLOW';
+      }; 
+      document.write(entry);//ALLOW
+      */
+     //same output to upper one
+
+      var age=9 
+      var entry = age>=1 ?
+      'ALLOW':'NOT ALLOW';
+      document.write(entry);
+
+    </script>
+</body>
+</html>

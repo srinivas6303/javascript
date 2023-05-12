@@ -1,0 +1,103 @@
+<!--
+ DATATYPE IN JS:
+JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+
+    1.Primitive data type
+         string
+         number
+         boolean
+         undefined
+         null(in js array shown as object datatype)
+
+    2.Non-primitive (reference) data type
+         Object
+         array(in js array shown as object datatype)
+
+    NOTE: typeof is predefined function,it shows datatype of variable 
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>js</title>
+</head>
+
+<body>
+
+<script> 
+                             //Primitive data type
+//string
+var name='srinivas';//or'23'
+document.write(name);
+document.write("<br>");
+document.write(typeof name);// typeof is predefined function,it shows datatype of variable 
+document.write("<br> <br>");
+
+
+//number
+var rollno=112233;
+document.write(rollno);
+document.write("<br>");
+document.write(typeof rollno);
+document.write("<br> <br>");
+
+//boolean
+var x=true;//true(1) & false(0) are boolean values
+document.write(x);
+document.write("<br>");
+document.write(typeof x);
+document.write("<br> <br>");
+
+//undefined
+var z;//z=undefined
+document.write(z);
+document.write("<br>");
+document.write(typeof z);
+document.write("<br> <br>");
+
+//null
+var y=null;//assigning null to variable(not assigning any value)
+document.write(y);
+document.write("<br>");
+document.write(typeof y);//null shown object datatype
+document.write("<br> <br>");
+
+
+
+                           //Non-primitive (reference) data type
+
+//Array
+var fruits=['APPLE','BANANA'];
+document.write(fruits);
+document.write("<br>");
+document.write(typeof fruits);//array shown object datatype in js
+document.write("<br> <br>");
+
+//object
+var student_details=
+{
+Name:'Srinivas',
+RollNo:48,
+Branch:'cse'
+};
+
+document.write(student_details);//output [object object]
+document.write("<br>");
+
+document.write(student_details.Name);//output = srinivas
+document.write("<br>");
+
+document.write(student_details.RollNo);//output = 48
+document.write("<br>");
+
+document.write(student_details.Branch);//output = cse
+document.write("<br>");
+
+document.write(typeof student_details);
+document.write("<br> <br>");
+
+</script>
+</body>
+</html>

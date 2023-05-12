@@ -1,0 +1,43 @@
+<!--
+       GLOBAL AND LOCAL VARIABLE
+GLOBAL VARIABLE:It present outside of the function
+               > access anywhere in program
+               >we can access global variable in function
+
+
+LOCAL VARIABLE:It present inside of the function
+               >  They can only be accessed from within the function
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var gv="global variable<br>";  //global variable
+
+        function A()
+        {
+            var lv="local variable<br>";  //local variable
+
+            document.write(lv);//(local variable can access inside function)
+
+            document.write(gv);//we can access global variable in function
+        };
+        A(); //function calling 
+
+      // document.write(lv);//(local variable can't access)
+        document.write(gv);//global variable can access)
+        
+
+        
+    </script>
+    
+</body>
+</html>

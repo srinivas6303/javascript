@@ -1,0 +1,159 @@
+<!--                      MOUSE EVENT
+    The MouseEvent Object handles events that occur when the mouse interacts with the HTML document.
+
+Mouse Events
+  EVENTS               OCCURS
+1.onclick	    A user clicks on an element
+2.oncontextmenu A user right-clicks on an element
+3.ondblclick	A user double-clicks on an element
+4.onmousedown	A mouse button is pressed over an element
+5.onmouseenter	The mouse pointer moves into an element
+6.onmouseleave	The mouse pointer moves out of an element
+7.onmousemove	The mouse pointer moves over an element
+8.onmouseout	The mouse pointer moves out of an element
+9.onmouseover	The mouse pointer moves onto an element
+10.onmouseup	A mouse button is released over an element
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+
+      <!--onmousemove and onmouseout   style tag-->
+    <style>
+        div {
+          width: 200px;
+          height: 100px;
+          border: white;
+          background-color: black;
+        }
+        </style>
+        
+    
+</head>
+<body>
+
+    <button  style="background-color:black;color:white;"
+     onclick="myonclick()" >ONCLICK!</button><!--onclick-->
+    <button  oncontextmenu="myoncontextmenu()" >ONCONTEXTMENU!</button><!--oncontextmenu-->
+    <button  ondbclick="myondbclick()" >ONDBCLICK!</button><!--ondbclick-->
+
+ 
+
+
+   
+
+
+    <p id="demo" style="color:red;" ></p> <!--onclick-->
+    <p id="demo1" style="color:greenyellow;" ></p> <!--oncontextmenu-->
+    <p id="demo2" style="color:brown;"></p><!--ondbclick-->
+
+
+    <p id="x" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        The mouseDown() function sets the color of this text to red.
+        The mouseUp() function sets the color of this text to blue.
+        </p><!--onmousedown & onmouseup-->
+
+     
+       <!--onmouseenter and onmouseleave-->
+     <img src="emoji.jpeg" alt="emoji image" 
+      onmouseenter="myonmouseenter(this)" onmouseleave="myonmouseleave(this)"
+        width="50px" height="50px">
+
+
+       
+     <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+     <p>When the mouse is moved over the div, the p element will display the horizontal and vertical coordinates of your mouse pointer, whose values are returned from the clientX and clientY properties on the 
+        MouseEvent object.</p>
+        <p id="move"></p>
+        <!--onmousemove and onmouseout-->
+
+
+
+
+
+
+
+
+    <script>
+    //1.onclick	    A user clicks on an element
+    function myonclick()
+    {
+       document.getElementById("demo").innerHTML= "I am from  onclick";
+    };
+
+
+    //2.oncontextmenu     A user right-clicks on an element
+    function myoncontextmenu()
+    {
+       document.getElementById("demo1").innerHTML= "I am from  oncontextmenu";
+    };
+
+
+    //3.ondblclick	A user double-clicks on an element
+    function myondbclick()
+    {
+       document.getElementById("demo2").innerHTML= "I am from  ondbclick";
+    };
+
+
+     // 4.onmousedown	A mouse button is pressed over an element
+     // 10.onmouseup	A mouse button is released over an element
+
+     function mouseDown() 
+     {
+       document.getElementById("x").style.color = "red";
+     };
+
+     function mouseUp()
+      {
+       document.getElementById("x").style.color = "blue";
+     };
+
+
+
+     //5.onmouseenter	The mouse pointer moves into an element
+     //9.onmouseover	The mouse pointer moves onto an element
+     //6.onmouseleave	The mouse pointer moves out of an element
+      function myonmouseenter(e) //onmouseenter and onmouseover gives same output
+      {
+        e.style.heigt="100px";
+        e.style.width="100px";
+      };
+
+      function myonmouseleave(l) 
+      {
+        l.style.heigt="50px";
+        l.style.width="50px";
+      }
+
+
+     // 7.onmousemove	The mouse pointer moves over an element
+     // 8.onmouseout	The mouse pointer moves out of an element
+     function myFunction(e)
+    {
+     let x = e.clientX;
+     let y = e.clientY;
+     let coor = "Coordinates: (" + x + "," + y + ")";
+     document.getElementById("move").innerHTML = coor;
+    }
+
+    function clearCoor()
+     {
+      document.getElementById("move").innerHTML = "";
+     }
+</script>
+</script>
+
+
+
+       
+    </script>
+    
+</body>
+</html>

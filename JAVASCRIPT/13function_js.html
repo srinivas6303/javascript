@@ -1,0 +1,74 @@
+<!--
+
+                 FUNCTION IN JS
+A JavaScript function is a block of code designed to perform a particular task.
+A JavaScript function is executed when "something" invokes it (calls it).
+
+  Syntax:
+    function function_name(parameters)
+{
+   body
+};
+function function_name(aruments)//Function calling
+
+Function parameters are listed inside the parentheses () in the function definition.
+Function arguments are the values received by the function when it is invoked.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+
+
+                 // simple function
+        function student_details()
+        {
+            var name="srinivas";
+            var rollno=12345678;
+            document.write("NAME:"+name+"<br>ROLLNO:"+rollno+"<br><br>");
+        };
+        student_details();//FUNCTION CALLING
+
+           
+                 // parameters & arguments
+           function sum(a,b)//parameters
+        {
+             var c=a+b;
+            document.write("TOTAL:"+c);
+            document.write("<br><br>");
+        };
+        sum(10,20);//arguments//FUNCTION CALLING
+
+
+                //return
+          function Marks(T,H,E,M,S,SC)//parameters
+        {
+             var total_marks=T+H+E+M+S+SC;
+             return  total_marks;//return output  goes to Marks function
+        };
+        //Marks(); doesn't gives output(function calling)
+        var k = Marks(50,60,89,56,87,48);//function(marks) assigning to variable (k)
+       document.write("TOTAL MARKS:600<br>");
+       document.write("TOTAL MARKS OBTAIND: "+k+"<br>");
+
+          //percentage of Marks
+        function percentage(TOTALMARKS)
+        {
+            var p=TOTALMARKS/600*100;
+            return p;
+        };
+         var l=percentage(k);//total marks are stored in k variable  
+         //function(percentage) assigning to variable (l)
+         document.write("TOTAL PERCENTAGE : "+l+"%<br>");
+    </script>
+    
+</body>
+</html>

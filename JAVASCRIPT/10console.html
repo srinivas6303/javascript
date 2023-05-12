@@ -1,0 +1,157 @@
+<!--
+             CONSOLE
+-console is a developer tool designed by google
+-console is a Objct
+-it is used finding errors in javascript 
+-Output displaying on console only
+-declaring array inside console is possible
+  syntax:      console.log(["elements"])
+
+
+Method	     Description
+assert()	 Writes an error message to the console if a assertion is false
+clear()	     Clears the console
+count()	     Logs the number of times that this particular call to count() has been called
+error()	     Outputs an error message to the console
+group()	     Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
+groupCollapsed()	Creates a new inline group in the console. However, the new group is created collapsed. The user will need to use the disclosure button to expand it
+groupEnd()	  Exits the current inline group in the console
+info()	      Outputs an informational message to the console
+log()	      Outputs a message to the console
+table()       Displays tabular data as a table
+time()	      Starts a timer (can track how long an operation takes)
+timeEnd()	  Stops a timer that was previously started by console.time()
+trace()	      Outputs a stack trace to the console
+warn()        Outputs a warning message to the console
+
+
+   GENERAL SYNTAX: Console.methode()
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+             //assert()
+   let x = 5;
+   let y = 5;
+   console.assert(x + y == 11, "Expression returned 'false'");//output:Expression returned 'false'
+
+
+
+            //clear()
+            //console.clear()
+
+
+
+            //count()
+  for (let i = 0; i < 5; i++) {
+  console.count();//gives output 1 to 5 (5 times executing for loop  )
+} 
+
+
+           //error()
+           console.error("You made a mistake");
+
+
+
+           //group()
+  console.log("Hello world!");
+  console.group();
+  console.log("Hello again, this time inside a group!");
+ /* 
+  Hello world!
+​ console.group
+​ Hello again, this time inside a group!  */
+
+
+
+          //groupCollapsed()
+ console.log("Hello world!");
+ console.groupCollapsed();
+ console.log("Hello again, this time inside a collapsed group!");
+/*output:Hello world!
+         groupCollapsed */
+
+
+
+         //groupEnd()
+  console.log("Hello world!");
+  console.group();
+  console.log("Hello again, this time inside a group!");
+  console.groupEnd();
+  console.log("and we are back.");
+  /*
+     Hello world!
+​ console.group
+​    Hello again, this time inside a group!
+​ and we are back.
+ */
+
+
+
+          //info()
+  console.info("Hello world!");//output:Hello world
+
+
+          //log
+  console.log("Hello world!");//output:Hello world
+
+
+          //table()
+  console.table(["Audi", "Volvo", "Ford"]);
+  /*
+       OUTPUT
+ (index)      Value
+ 0	          'Audi'
+ 1	          'Volvo'
+ 2	          'Ford'
+ >Array(3)
+ */
+
+    
+         //time() & timeEnd()
+  //The time it takes to run a for-loop 100.000 times:
+  console.time();
+  for (let i = 0; i < 100000; i++) {
+  // some code
+  }
+  console.timeEnd();
+  //output:  default: 2.142333984375 ms
+
+
+         //trace()	
+  function myFunction() 
+  {
+  myOtherFunction();
+  }
+  function myOtherFunction() 
+ {
+  console.trace();
+ }
+
+ /*  OUTPUT
+   console.trace
+  myOtherFunction
+  myFunction
+  */
+
+
+         //warn()
+ console.warn("This is a warning!");
+
+</script>
+</body>
+</html>

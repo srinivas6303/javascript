@@ -1,0 +1,88 @@
+<!--                  SWITCH CASE
+The switch statement is used to perform different actions based on different conditions.
+
+The JavaScript Switch Statement
+Use the switch statement to select one of many code blocks to be executed.
+
+Syntax
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+This is how it works:
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+If there is no match, the default code block is executed.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+   <script>
+    //var d=1;// DIRECT DECLARING VALUE
+     var d;
+     d=(prompt("ENTER A DAY (1 -7):"))-1;//user input
+    switch(d)
+    {
+        case 0: alert("SUNDAY");// alert used to show output in popup of the page
+        break;
+
+        case 1: document.write("MONDAY");
+        break;
+
+        case 2: document.write("TUESDAY");
+        break;
+
+        case 3: document.write("WEDNESDAY");
+        break;
+
+        case 4: document.write("THURSDAY");
+        break;
+
+        case 5: document.write("FRIDAY");
+        break;
+
+        case 6: document.write("SATURDAY");
+        break;
+        default:document.write("INVALID DAY");
+
+    }
+                 
+              //IN SWITCHCASE APPLYING CONDITION
+        var age=18;
+        switch(true)
+    {
+        case (age>=18 && age<40): 
+        document.write("ALLOW TO RUN");// alert used to show output in alert window
+        break;
+
+        default:document.write("NOT ALLOW TO RUN");
+
+    }
+
+    
+
+
+
+
+
+   </script> 
+</body>
+</html>

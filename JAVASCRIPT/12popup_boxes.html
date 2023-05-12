@@ -1,0 +1,69 @@
+<!--
+POPUP BOXES:
+Popup boxes are  used to display output in new window
+
+There are 3 types of popup boxes 
+ 1.Alert
+    syntax: window.alert("message");//window is not nessary
+    //it is a warning  message ( only ok button is avaliable)
+
+ 2.confirm
+    syntax: window.confirm("message");//window is not nessary
+    //it is a conforming   message ( ok and cancel button is avaliable)
+
+ 3.prompt
+     syntax: window.prompt("message");//window is not nessary
+     //it's helps to take user input  ( ok and cancel button is avaliable)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+
+       // 1.Alert
+       var a=10;
+       var b=20;
+       if(a===b)
+       {
+        window.alert("a equals to b");
+       }
+       else
+       {
+        window.alert("a not equal to b");
+       };
+
+
+
+        // 2.confirm
+       var msg= window.confirm("are you sure to delete");
+       if(msg)
+       {
+        alert(msg);// ok gives true
+       }
+       else
+       {
+        alert(msg);//cancel gives false
+       };
+
+
+        //3.prompt
+        var name=prompt('Enter your name');
+        document.write("Welcome  "+name);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+JAVASCRIPT:
+
+1.WAYS TO WRITING JS
+   >Inpage(1)  >External(3)(2 IS HTML)
+
+
+2.ADDING HTML TAGS IN JAVASCRIPT(4)
+
+
+3.COMMENTS IN JS(5)
+ >Single Line >MultiLine
+
+
+4.VARIBLES(6)
+  >var >let >const
+
+
+5.DATATYPES IN JS(7)
+  >Primitive datatype
+     -string
+     -number
+     -boolean
+     -undefined
+     -null
+  >Non-Primitive datatype
+     -array
+     -object
+
+
+
+6.OPERATORS(8)
+  >.Arithmetic Oprators
+  >.Assignment Oprators
+  >.Comparison Operators
+  >.Logical Operator
+  >.Conditional Operators
+  
+  unary operator  : ++,--
+  binary operator : Arithmetic Oprators,Assignment Oprators,
+                     Comparison Operators,Logical Operator
+  ternary operator: Conditional Operators
+
+
+
+7.CONTROL STATEMENTS(9)
+  >if
+  >else if
+  >else
+
+
+8.CONSOLE(10)
+  	       	     
+   >>Methods
+    -assert()	
+    -clear()	    
+    -count()	     
+    -error()	   
+    -group()	     
+    -groupCollapsed()	
+    -groupEnd()	 
+    -info()	     
+    -log()	      
+    -table()     
+    -time()	      
+    -timeEnd()	  
+    -trace()	 
+    -warn()
+
+
+9.SWITCH CASE(11)
+   >User input(prompt function)
+   >Applying condition in switch case
+   > Alert :used to show output in alert window
+
+
+
+10.POPUP BOXES(12)
+     1.Alert
+     2.Confirm
+     3.Prompt
+
+
+11.FUNCTION(13)
+    >function calling
+    >Parameters
+    >Arguments
+    >return
+
+
+12.GLOBAL AND LOCAL VARIABLE(14)
+
+
+ 
+
